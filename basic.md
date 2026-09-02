@@ -39,8 +39,7 @@ $$
 训练样本集合的表示：
 
 $$
-D =
-\{(x^{(1)},y^{(1)}),(x^{(2)},y^{(2)}),\ldots,(x^{(m)},y^{(m)})\}
+D=\lbrace (x^{(1)},y^{(1)}),(x^{(2)},y^{(2)}),\ldots,(x^{(m)},y^{(m)}) \rbrace
 $$ 
 
 训练样本的个数(m)：
@@ -55,7 +54,9 @@ $$
 n_x×m
 $$  
 
-<img width="996" height="710" alt="image" src="https://github.com/user-attachments/assets/410c8343-f70a-4f66-aef5-f9b8e191ddea" />  
+<p align="center">
+<img width="410" height="263" alt="image" src="https://github.com/user-attachments/assets/9e07b754-babd-4b4c-8d45-d6914625a86a" />
+</p>  
 
 $$
 X∈R^{n_x×m}
@@ -73,7 +74,9 @@ $$
 1×m
 $$  
 
-<img width="399" height="111" alt="image-20260901114122331" src="https://github.com/user-attachments/assets/ec5a8386-2189-43b5-88a4-2ee17fd162d1" />  
+<p align="center">
+<img width="359" height="86" alt="image" src="https://github.com/user-attachments/assets/cb90eae1-420c-490d-9265-afdf83ef1560" />  
+</p>
 
 Python命令：
 
@@ -111,7 +114,10 @@ $$
 \hat{y}=\sigma（w^Tx+b）
 $$
 
-![image-20260901115849021](C:\Users\16131\AppData\Roaming\Typora\typora-user-images\image-20260901115849021.png)
+<p align="center">
+<img width="370" height="200" alt="image" src="https://github.com/user-attachments/assets/f05c7146-cf92-4b38-ad70-2dfa7e847f70" />
+</p>
+
 
 sigmoid函数：
 
@@ -147,7 +153,9 @@ $$
 
 因为使用误差平方会使得梯度下降可能只能找到局部最优但找不到全局最优解
 
-![image-20260901122307132](C:\Users\16131\Desktop\assets\image-20260901122307132.png)
+<p align="center">
+<img width="235" height="146" alt="image" src="https://github.com/user-attachments/assets/6a50f8b1-6571-49d2-bfe5-a12b6cae7d87" />
+</p>
 
 所以选择一种损失函数：
 
@@ -155,7 +163,10 @@ $$
 L(\hat{y},y)=-（ylog\hat{y}+(1-y)log(1-\hat{y})）
 $$  
 
-![image-20260901122909608](C:\Users\16131\Desktop\assets\image-20260901122909608.png)
+<p align="center">
+<img width="950" height="109" alt="image" src="https://github.com/user-attachments/assets/72c586d4-6774-4153-854a-73fb752df4ed" />
+
+</p>
 
 成本函数（Cost function）：
 
