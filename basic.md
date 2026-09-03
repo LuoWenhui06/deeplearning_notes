@@ -108,7 +108,7 @@ $$
 
 ### 1.2.1 激活函数（sigmoid函数）
 
-为了实现预测值介于[0,1]范围内，我们使用激活函数（sigmoid函数）作用于该函数，即
+为了实现预测值介于[0,1]范围内，我们使用激活函数（sigmoid函数）作用于该函数，即  
 
 $$
 \hat{y}=\sigma（w^Tx+b）
@@ -121,13 +121,13 @@ $$
 
 sigmoid函数：
 
-$$
-\sigma(z) = \frac{1}{1 + e^{-z}}
-$$  
+```math
+\sigma(z)=\frac{1}{1+e^{-z}}
+```
 
-即：
+即：  
 
-$$
+$$ 
 \hat{y}=\frac{1}{1 + e^{-{（w^Tx+b）}}}
 $$
 
@@ -139,25 +139,25 @@ $$
 
 - 成本函数衡量的是全体训练样本上的表现
 
-训练集的目的，是为了达到通过训练，调整参数w和b,使得预测结果接近实际结果（0/1）
+训练集的目的，是为了达到通过训练，调整参数w和b,使得预测结果接近实际结果（0/1）  
 
 $$
 \hat{y}^{(i)}≈{y}^{(i)}
 $$
 
-损失函数（误差函数）[Loss(error) function]，起着与误差平方相似作用
+损失函数（误差函数）[Loss(error) function]，起着与误差平方相似作用  
 
 $$
 L(\hat{y},y)=\frac{1}{2}(\hat{y}-y)^2
 $$
 
-因为使用误差平方会使得梯度下降可能只能找到局部最优但找不到全局最优解
+因为使用误差平方会使得梯度下降可能只能找到局部最优但找不到全局最优解  
 
 <p align="center">
 <img width="235" height="146" alt="image" src="https://github.com/user-attachments/assets/6a50f8b1-6571-49d2-bfe5-a12b6cae7d87" />
 </p>
 
-所以选择一种损失函数：
+所以选择一种损失函数：  
 
 $$
 L(\hat{y},y)=-（ylog\hat{y}+(1-y)log(1-\hat{y})）
@@ -165,11 +165,14 @@ $$
 
 <p align="center">
 <img width="950" height="109" alt="image" src="https://github.com/user-attachments/assets/72c586d4-6774-4153-854a-73fb752df4ed" />
-
 </p>
 
-成本函数（Cost function）：
+成本函数（Cost function）：  
 
 $$
-{ J ( w , b ) } =\frac { 1 } { m } \sum _ { i = 1 } ^ { m } L ( \hat { y } ^ { ( i ) } , y ^ { ( i ) } ) = - \frac { 1 } { m } \sum _ { i = 1 } ^ { m } [ y ^ { ( i ) } log \hat { y } ^ { ( i ) } + ( 1 - y ^ { ( i ) } ) log ( 1 - \hat { y } ^ { ( i ) } ) ]
+J(w, b) = \frac{1}{m} \sum_{i=1}^{m} L(\hat{y}^{(i)}, y^{(i)}) = -\frac{1}{m} \sum_{i=1}^{m} \left[ y^{(i)} \log{\hat{y}^{(i)}} + (1 - y^{(i)}) \log{(1 - \hat{y}^{(i)})} \right]
 $$
+
+<p align="center">
+<img width="620" height="361" alt="image" src="https://github.com/user-attachments/assets/496df7f3-04d6-42ec-8e93-95b1e72fee42" />
+</p>
