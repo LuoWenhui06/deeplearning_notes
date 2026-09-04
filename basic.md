@@ -50,7 +50,7 @@ X的矩阵大小
 $$
 n_x×m
 $$
-![0](C:\Users\16131\Desktop\deeplearning_notes\image\0.png)
+![](image/0.png)
 
 注：$X∈R^{n_x×m}$ 
 
@@ -62,7 +62,7 @@ Y的矩阵大小为:
 $$
 1×m
 $$
-![1](C:\Users\16131\Desktop\deeplearning_notes\image\1.png)
+![](image/1.png)
 
 Python命令：
 $$
@@ -90,7 +90,7 @@ $$
 $$
 \hat{y}=\sigma（w^Tx+b）
 $$
-![2](C:\Users\16131\Desktop\deeplearning_notes\image\2.png)
+![](image/2.png)
 
 sigmoid函数：
 $$
@@ -118,21 +118,21 @@ L(\hat{y},y)=\frac{1}{2}(\hat{y}-y)^2
 $$
 因为使用误差平方会使得梯度下降可能只能找到局部最优但找不到全局最优解
 
-![3](C:\Users\16131\Desktop\deeplearning_notes\image\3.png)
+![](image/3.png)
 
 
 所以选择一种损失函数：
 $$
 L(\hat{y},y)=-（ylog\hat{y}+(1-y)log(1-\hat{y})）
 $$
-![4](C:\Users\16131\Desktop\deeplearning_notes\image\4.png)
+![](image/4.png)
 
 
 成本函数（Cost function）：
 $$
 J(w, b) = \frac{1}{m} \sum_{i=1}^{m} L(\hat{y}^{(i)}, y^{(i)}) = -\frac{1}{m} \sum_{i=1}^{m} \left[ y^{(i)} \log{\hat{y}^{(i)}} + (1 - y^{(i)}) \log{(1 - \hat{y}^{(i)})} \right]
 $$
-![5](C:\Users\16131\Desktop\deeplearning_notes\image\5.png)
+![](image/5.png)
 
 ### 1.2.3梯度下降法
 
@@ -152,7 +152,7 @@ $$
 
 - $\alpha:learning\:rate (lr)$ ,学习率,可以控制每一次或者迭代梯度下降法中的步长
 
-![6](C:\Users\16131\Desktop\deeplearning_notes\image\6.png)
+![](image/6.png)
 
 点的移动方向是向最终$j(w)$ 最小值移动的。斜率是标量，带正负号。
 
@@ -162,6 +162,7 @@ $$
 
 复合函数求偏导（红色）
 
-![7](C:\Users\16131\Desktop\deeplearning_notes\image\7.png)
+![](image/7.png)
 
-![8](C:\Users\16131\Desktop\deeplearning_notes\image\8.png)
+![](image/8.png)
+
