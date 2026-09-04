@@ -131,7 +131,7 @@ $$
 
 成本函数（Cost function）：
 $$
-{ J ( w , b ) } =\frac { 1 } { m } \sum _ { i = 1 } ^ { m } L ( \hat { y } ^ { ( i ) } , y ^ { ( i ) } ) = - \frac { 1 } { m } \sum _ { i = 1 } ^ { m } [ y ^ { ( i ) } log \hat { y } ^ { ( i ) } + ( 1 - y ^ { ( i ) } ) log ( 1 - \hat { y } ^ { ( i ) } ) ]
+J(w, b) = \frac{1}{m} \sum_{i=1}^{m} L(\hat{y}^{(i)}, y^{(i)}) = -\frac{1}{m} \sum_{i=1}^{m} \left[ y^{(i)} \log{\hat{y}^{(i)}} + (1 - y^{(i)}) \log{(1 - \hat{y}^{(i)})} \right]
 $$
 ![5](C:\Users\16131\Desktop\deeplearning_notes\image\5.png)
 
