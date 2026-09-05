@@ -290,3 +290,24 @@ $$
 
 ![](image/8.png)
 
+![](./image/9.jpg)
+
+### 1.2.5向量化
+
+向量化可以消除代码中的for循环，提高速度
+
+![](./image/10.jpg)
+
+![](./image/11.png)
+
+```
+np.dot(a,b)#a矩阵*b矩阵
+np.log()#计算log
+np.abs()#计算绝对值
+np.exp()#计算指数
+np.maximum()#计算最大值
+```
+
+![](./image/12.png)
+
+![](./image/13.png)
