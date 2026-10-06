@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local datasets
+2026.10~/1_AlexNet/data/cifar-10-Ñ¹Ëõ°ü.gz
+2026.10~/1_AlexNet/data/
